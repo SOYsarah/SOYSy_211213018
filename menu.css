@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body .container{
+    background: rgba(0,0,0,0.7) url(cg7\ -\ Copie.jpg) no-repeat;
+    background-size: cover;
+    height: 400px;
+    padding-top: 10px;
+    padding-left: 400px;
+    background-position: center;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 10px;
+
+}
+.section{
+    padding: 2rem 9%;
+    
+}
+
+.container navbar ul{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.navbar p{
+    align-items: right;
+    font-size: 100px;
+    color: whitesmoke;
+    padding-left: 55px;
+}
+
+.navbar u1 li{
+    display: inline-block;
+    padding: 28px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.navbar u1 li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    transition: 2.5s;
+}
+
+
+.navbar .entree{
+    padding:7px;
+    background-color: orangered;
+}
+
+li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: orangered;
+    margin: auto;
+    display: block;
+}
+
+li a:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+   
+}
+
+li a:hover{
+    color: orangered;
+}
+
+.recipes{
+    background: url(b1.jpeg);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+
+.recipe img{
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.recipe img:hover{
+    transform: scale(1.04);
+}
+
+.recipe h3{
+    padding: 5px;
+}
+
+.recipe .cn{
+    width: 67px;
+    height: 23px;
+    background: orangered;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 170px;
+    font-size: 18px;
+    font-family:sans-serif ;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.recipe .cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: rgb(83, 77, 77);
+}
